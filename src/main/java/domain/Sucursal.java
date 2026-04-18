@@ -1,7 +1,8 @@
 package domain;
 
 public class Sucursal {
-     private String codigo;
+
+    private String codigo;
     private String direccion;
     private String ciudad;
     private Responsable responsable;
@@ -27,5 +28,10 @@ public class Sucursal {
 
     public Responsable getResponsable() {
         return responsable;
+    }
+
+    @Override
+    public String toString() {
+        return codigo;
     }
 }

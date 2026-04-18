@@ -28,6 +28,10 @@ public abstract class Vehiculo {
         return tipo;
     }
 
+    public void setTipo(VehiculoTipo tipo) {
+        this.tipo = tipo;
+    }
+
     public double getCapacidadCarga() {
         return capacidadCarga;
     }
@@ -50,6 +54,6 @@ public abstract class Vehiculo {
 
     @Override
     public String toString() {
-        return patente + " - " + marca + " " + modelo + " - Sucursal: " + sucursal.getCodigo();
+        return marca.getNombre() + " " + modelo + " - Sucursal: " + sucursal.getCodigo();
     }
 }
